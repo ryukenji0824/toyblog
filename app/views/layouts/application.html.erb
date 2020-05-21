@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <title>Toyblog</title>
     <%= csrf_meta_tags %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <%= render'layouts/header' %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <div class="container-fluid">
+
+      <h1 class = "text-center">Hi !!</h1>
+      <h4 class="text-center">ここは、みんなのおもちゃの思い出を記憶と共に記録に残すための場所だよ。<br>ぜひ気軽に使ってね。</h4>
+    </div>
     <%= yield %>
   </body>
 </html>
