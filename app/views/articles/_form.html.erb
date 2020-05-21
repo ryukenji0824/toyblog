@@ -1,0 +1,23 @@
+<%= form_for article do |f| %>
+  <div id="cover-image", class="form-group padding-top-15 relative">
+    <% if article.image_id.present? %>
+      <%= image_tag attachment_url(article, :image), class: "article-image" %>
+    <% else %>
+      <%= image_tag "syde.jpg", class: "article-image" %>
+      <h2 class="text-center syde-edit">画像がないぜ！</h2>
+    <% end %>
+    <i class="fa fa-camera"></i>
+  </div>
+      <%= f.attachment_field :image %>
+  <div class="form-group padding-top-15">
+  </div>
+  <div class="form-group padding-top-15">
+    <%= f.label :title, "タイトル" %>
+    <%= f.text_field :title ,class:"form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :body, "本文" %>
+    <%= f.text_area :body ,rows:10, class:"form-control" %>
+  </div>
+  <%= f.submit "登録する", class:"btn btn-success" %>
+<% end %>
