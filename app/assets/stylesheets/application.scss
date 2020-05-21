@@ -1,0 +1,12 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+@import 'articles';
+
+body{
+  background-image: image-url('toystory-skyimg.jpg');
+}
+
+.navbar-brand{
+  font-size: 40px;
+}
