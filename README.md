@@ -13,6 +13,8 @@
 * Ruby on Rails version: rails 5.0.7.2
 * Ruby version: ruby 2.5.0
 * servise: Blog(write{title,body},read,imagesave,)
+* deploy server: heroku
+* URL: https://toysblog.herokuapp.com/
 
 ## Test Account(テスト用アカウント)
 * name: テストアカウント
