@@ -60,3 +60,4 @@ gem "refile-mini_magick", github: "refile/refile-mini_magick"
 gem "font-awesome-rails"
 gem 'mysql2', '>= 0.3.18', '< 0.6.0'
 gem 'execjs'
+gem 'jquery-turbolinks'
