@@ -56,7 +56,12 @@
           </div>
         </div>
     </div>
-    <h1 class="text-center margin-top-20px"><%= current_user.name %>さんの投稿</h1>
+
+      <% if user_signed_in? %>
+        <h1 class="text-center margin-top-20px"><%= current_user.name %>さんの投稿</h1>
+      <% else %>
+        <h1 class="text-center margin-top-20px" href="/">投稿なし</h1>
+      <% end %>
     <%= yield %>
   </body>
 </html>
