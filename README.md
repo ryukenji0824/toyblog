@@ -1,4 +1,26 @@
-# README
+## タイトル
+### Toy Blog
+
+
+![app_image](https://i.gyazo.com/060f3d6581974ec8c5fe99fc3ffd50d6.jpg)
+[Gifサンプル](https://i.gyazo.com/7052aa5a3041060638d5131fccfbaed5.mp4)
+
+
+<p align="center">
+  <a href="https://railsguides.jp/"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Ruby_on_Rails_logo.jpg" width="80px;" /></a>
+  <br>
+  <a href="https://www.ruby-lang.org/ja/"><img src="https://www.ruby-lang.org/images/header-ruby-logo.png" height="40px;" /></a>
+  <a href="https://github.com/"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" height="30px;" /></a>
+  <a href="herokuURL"><img src="https://brand.heroku.com/static/media/heroku-logotype-vertical.f7e1193f.svg" height="40px;" /></a>
+  <a href="mysqlURL"><img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" height="45px;" /></a>
+</p>
+
+
+
+
+## App URL
+### https://toysblog.herokuapp.com/
+
 
 ## アプリケーション情報
 * シンプルなブログサービスです。
@@ -14,7 +36,6 @@
 * Ruby version: ruby 2.5.0
 * servise: Blog(write{title,body},read,imagesave,)
 * deploy server: heroku
-* URL: https://toysblog.herokuapp.com/
 
 ## Test Account(テスト用アカウント)
 * name: テストアカウント
