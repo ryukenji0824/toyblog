@@ -13,9 +13,48 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <div class="container-fluid">
-
       <h1 class = "text-center">Hi !!</h1>
       <h4 class="text-center">ここはおもちゃの思い出を、記憶と共に記録に残す場所だよ。<br>ぜひ気軽に使ってね。</h4>
+    </div>
+    <div></div>
+    <div class="container">
+      <h1 class="text-center margin-top-20px absolute">SAMPLE</h1>
+        <div class = "col-md-3 article-block">  
+          <%= image_tag"title_image.jpg", class:"img-responsive padding-top-15 margin-bottom-15", alt: "画像がないぜ！" %>
+          <div>
+            <p class="title">タイトル</p>
+            <span>
+              <%= "XXXX年YY月ZZ日" %>
+            </span>
+          </div>
+        </div>
+        <div class = "col-md-3 article-block">  
+          <%= image_tag"buzz.jpg", class:"img-responsive padding-top-15 margin-bottom-15", alt: "画像がないぜ！" %>
+          <div>
+            <p class="title">タイトル</p>
+            <span>
+              <%= "XXXX年YY月ZZ日" %>
+            </span>
+          </div>
+        </div>
+        <div class = "col-md-3 article-block">  
+          <%= image_tag"jesie.png", class:"img-responsive padding-top-15 margin-bottom-15", alt: "画像がないぜ！" %>
+          <div>
+            <p class="title">タイトル</p>
+            <span>
+              <%= "XXXX年YY月ZZ日" %>
+            </span>
+          </div>
+        </div>
+        <div class = "col-md-3 article-block">  
+          <%= image_tag"pixeball.jpg", class:"img-responsive padding-top-15 margin-bottom-15", alt: "画像がないぜ！" %>
+          <div>
+            <p class="title">タイトル</p>
+            <span>
+              <%= "XXXX年YY月ZZ日" %>
+            </span>
+          </div>
+        </div>
     </div>
     <%= yield %>
   </body>

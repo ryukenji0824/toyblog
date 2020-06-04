@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.margin-top-20px{
+  margin-top: 20px;
+}
+
 .margin-top-5per{
   margin-top: 5%;
 }
@@ -83,4 +87,15 @@ a{
 }
 #article_image{
   display: none;
+}
+.container{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+  z-index: 1;
+  top: 55px;
+  left: 372px;
+  font-size: 100px;
+  color: skyblue;
 }
