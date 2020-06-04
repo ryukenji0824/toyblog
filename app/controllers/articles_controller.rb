@@ -24,7 +24,8 @@ class ArticlesController < ApplicationController
     if @article.save
       redirect_to @article, notice: "作成できました"
     else
-      render :new, alert: "作成できませんでした"
+      flash.now[:alert] = "作成できませんでした"
+      render action: :new
     end
   end
 
@@ -32,7 +33,8 @@ class ArticlesController < ApplicationController
     if @article.update(article_params)
       redirect_to @article, notice: "更新できました"
     else
-      render :edit, alert: "更新できませんでした"
+      flash.now[:alert] = "更新できませんでした"
+      render action: :edit
     end
   end
 
@@ -40,7 +42,8 @@ class ArticlesController < ApplicationController
     if @article.destroy
       redirect_to root_path, notice: "削除が完了しました"
     else
-      redirect_to root_path, alert: "削除できませんでした"
+      flash.now[:alert] = "削除できませんでした"
+      redirect_to root_path
     end
   end
 
